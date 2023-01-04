@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/body-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: url(../images/body-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 30px 30px 50px 15px;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+}
+
+header input#pesquisar {
+    position: absolute;
+    background-color: transparent;
+    padding: 5px 0;
+    border: 1px solid #0707076e;
+    border-radius: 20px;
+    top: 13.5%;
+    left: 1%;
+}
+input#pesquisar:focus { /* retiragem da borda automatica*/
+    box-shadow: inset 6px -1px 5px 0px #0000001f;
+    outline: 0;
+    border: 1px solid #000000b7;
+}
+#pesquisar::placeholder{
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+
+}
+
+section.fundo-mesa {
+    background: whitesmoke url(../images/background-mesa.jpg) no-repeat center center scroll;
+    background-size: cover;
+    height: 100vh; 
+    box-shadow: 2px 2px 4px #0000002f;
+}
+
+section h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#lanche1 {
+    position: absolute;
+    background: url(../images/hamburger1-m.png)center center scroll;
+    top: 80%;
+    left: -3%;
+}
+
+#lanche2 {
+    position: absolute;
+    background: url(../images/hamburger-padrao-m.png) center center scroll;
+    top: 75%;
+    left: 32%;
+}
+
+#lanche3 {
+    position: absolute;
+    background: url(../images/hamburger3-m.png)center center scroll;
+    top: 65%;
+    left: 65%;
+}
+
