@@ -9,6 +9,7 @@ body {
     background: url(../images/body-background.jpg) no-repeat center center fixed;
     background-size: cover;
     font: normal normal 1em Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -43,34 +44,77 @@ section.fundo-mesa {
     background: whitesmoke url(../images/background-mesa.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
+    width: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 4px #0000002f;
 }
 
 section h2 {
-    padding-top: 20px;
+    padding-top: 150px;
     text-align: center;
 }
 
-
-
 #lanche1 {
     position: absolute;
-    background: url(../images/hamburger1-m.png)center center scroll;
-    top: 85%;
-    left: -3%;
+    height: 280px;
+    top: 83%;
+    left: -20px;
+    cursor: pointer;
+}
+#lanche1 > p {
+    font: normal bolder 1em Arial,Helvetica, sans-serif;
+    text-align: center;
+    visibility: hidden;
+}
+
+#lanche1:active > p {
+    visibility: visible;
+    transition-delay: .1s;
+}
+
+#lanche1:active {
+    position: absolute;
+    top: 50%;
+    transition-delay: .1s;
+
 }
 
 #lanche2 {
     position: absolute;
-    background: url(../images/hamburger-padrao-m.png) no-repeat center center scroll;
-    top: 80%;
-    left: 32%;
+    top: 77%;
+    left: 200px;
+    cursor: pointer;
+}
+#lanche2 > p {
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+#lanche2:active > p {
+    visibility: visible;
+    transition-delay: .1s;
+}
+
+#lanche2:active {
+    position: absolute;
+    top: 50%;
+    transition-delay: .1s;
 }
 
 #lanche3 {
     position: absolute;
-    background: url(../images/hamburger3-m.png)center center scroll;
-    top: 70%;
-    left: 65%;
+    top: 84%;
+    left: 450px;
+    cursor: pointer;
 }
+
+#lanche3:active {
+    position: absolute;
+    top: 55%;
+    transition-delay: .1s;
+}
+
 
