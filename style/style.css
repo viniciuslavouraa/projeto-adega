@@ -51,24 +51,26 @@ section h2 {
     text-align: center;
 }
 
+
+
 #lanche1 {
     position: absolute;
     background: url(../images/hamburger1-m.png)center center scroll;
-    top: 80%;
+    top: 85%;
     left: -3%;
 }
 
 #lanche2 {
     position: absolute;
     background: url(../images/hamburger-padrao-m.png) center center scroll;
-    top: 75%;
+    top: 80%;
     left: 32%;
 }
 
 #lanche3 {
     position: absolute;
     background: url(../images/hamburger3-m.png)center center scroll;
-    top: 65%;
+    top: 70%;
     left: 65%;
 }
 
