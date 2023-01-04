@@ -62,7 +62,7 @@ section h2 {
 
 #lanche2 {
     position: absolute;
-    background: url(../images/hamburger-padrao-m.png) center center scroll;
+    background: url(../images/hamburger-padrao-m.png) no-repeat center center scroll;
     top: 80%;
     left: 32%;
 }
