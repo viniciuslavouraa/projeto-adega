@@ -58,7 +58,7 @@ section h2 {
 #lanche1 {
     position: absolute;
     height: 280px;
-    top: 83%;
+    top: 82%;
     left: -20px;
     cursor: pointer;
 }
@@ -75,7 +75,7 @@ section h2 {
 
 #lanche1:active {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transition-delay: .1s;
 
 }
