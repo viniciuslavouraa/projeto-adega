@@ -41,13 +41,14 @@ input#pesquisar:focus { /* retiragem da borda automatica*/
 }
 
 section.fundo-mesa {
+    z-index: 10;
     background: whitesmoke url(../images/background-mesa.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
     width: 700px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 2px 2px 4px #0000002f;
+    box-shadow: 2px 2px 4px #000000b6;
 }
 
 section h2 {
@@ -57,7 +58,6 @@ section h2 {
 
 #lanche1 {
     position: absolute;
-    height: 280px;
     top: 82%;
     left: -20px;
     cursor: pointer;
@@ -75,7 +75,7 @@ section h2 {
 
 #lanche1:active {
     position: absolute;
-    top: 60%;
+    top: 55%;
     transition-delay: .1s;
 
 }
@@ -83,16 +83,15 @@ section h2 {
 #lanche2 {
     position: absolute;
     top: 77%;
-    left: 200px;
+    left: 220px;
     cursor: pointer;
 }
 #lanche2 > p {
     font: normal bolder 1em Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -30px;
     visibility: hidden;
 }
-
 #lanche2:active > p {
     visibility: visible;
     transition-delay: .1s;
@@ -110,11 +109,18 @@ section h2 {
     left: 450px;
     cursor: pointer;
 }
+#lanche3 > p {
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+    text-align: center;
+    visibility: hidden;
+}
+#lanche3:active > p {
+    visibility: visible;
+    transition-delay: .1s;
+}
 
 #lanche3:active {
     position: absolute;
     top: 55%;
     transition-delay: .1s;
 }
-
-
