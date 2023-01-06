@@ -57,6 +57,11 @@ input#pesquisar:focus { /* retiragem da borda automatica*/
 
 }
 
+main {
+    min-width: 700px;
+    max-width: 1000px;
+}
+
 section.fundo-mesa {
     z-index: 10;
     background: whitesmoke url(../images/background-mesa-m.jpg) no-repeat center center scroll;
@@ -90,9 +95,8 @@ section h2 {
 }
 
 #lanche1 {
-    box-sizing: border-box;
     position: absolute;
-    top: 82%;
+    top: 500px;
     left: -9px;
     cursor: pointer;
 }
@@ -114,7 +118,7 @@ section h2 {
 
 #lanche2 {
     position: absolute;
-    top: 77%;
+    top: 475px;
     left: 235px;
     cursor: pointer;
 }
@@ -136,7 +140,7 @@ section h2 {
 
 #lanche3 {
     position: absolute;
-    top: 84%;
+    top: 515px;
     left: 455px;
     cursor: pointer;
 }
@@ -156,12 +160,13 @@ section h2 {
 }
 
 /*  continuar contruçao do celular */
+
 #celular {
     z-index: 8;
     position: absolute;
 
-    top: 40%;
-    left: 53%;
+    top: 190px;
+    left: 800px;
 }
 
 .conteudo-celular {
