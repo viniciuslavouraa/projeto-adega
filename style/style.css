@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(../images/body-background.jpg) no-repeat center center fixed;
+    background: url(../backgrounds/body-background-m.jpg) no-repeat center center fixed;
     background-size: cover;
     font: normal normal 1em var(--fonte-padrao);
     overflow-x: hidden;
@@ -24,7 +24,7 @@ body {
 
 header {
    /* position: fixed; */
-    background: url(../images/body-background-m.jpg) no-repeat center center fixed;
+    background: url(../backgrounds/body-background-m.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 30px 30px 50px 15px;
     text-align: center;
@@ -64,12 +64,12 @@ main {
 
 section.fundo-mesa {
     z-index: 10;
-    background: whitesmoke url(../images/background-mesa-m.jpg) no-repeat center center scroll;
+    background: whitesmoke url(../backgrounds/background-mesa-m.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
-    width: 700px;
+    width: 800px;
     margin: 1px;
-    border-bottom-right-radius: 10px;
+
     box-shadow: 2px 2px 4px #000000b6;
 }
 
@@ -96,7 +96,7 @@ section h2 {
 
 #lanche1 {
     position: absolute;
-    top: 500px;
+    top: 510px;
     left: -9px;
     cursor: pointer;
 }
@@ -119,7 +119,7 @@ section h2 {
 #lanche2 {
     position: absolute;
     top: 475px;
-    left: 235px;
+    left: 290px;
     cursor: pointer;
 }
 #lanche2 > p {
@@ -141,7 +141,7 @@ section h2 {
 #lanche3 {
     position: absolute;
     top: 515px;
-    left: 455px;
+    left: 550px;
     cursor: pointer;
 }
 #lanche3 > p {
@@ -159,20 +159,21 @@ section h2 {
     transition: .3s ease-in ;
 }
 
-/*  continuar contruçao do celular */
-
 #celular {
+    display: block;
     z-index: 8;
     position: absolute;
-
     top: 190px;
-    left: 800px;
+    left: 821px;
 }
 
 .conteudo-celular {
     position: static;
     background-color: white;
-    width: 130px;
-    height: 150px;
-    margin: -300px 215px;
+    background: url(../images/cartaz-promoçao-m.png)center center scroll;
+    background-size: cover;
+    width: 104px;
+    height: 221px;
+    margin: -345px 170px;
 }
+
