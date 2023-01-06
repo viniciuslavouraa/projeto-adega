@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Rowdies:wght@300;400;700&family=Seymour+One&display=swap');
+
+
+:root {
+    --fonte1:  'Seymour One', sans-serif;
+    --fonte2: 'East Sea Dokdo', cursive;
+    --fonte3: 'Rowdies', cursive;
+    --fonte-padrao: Arial,Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +18,28 @@
 body {
     background: url(../images/body-background.jpg) no-repeat center center fixed;
     background-size: cover;
-    font: normal normal 1em Arial, Helvetica, sans-serif;
+    font: normal normal 1em var(--fonte-padrao);
     overflow-x: hidden;
 }
 
 header {
-    background: url(../images/body-background.jpg) no-repeat center center fixed;
+   /* position: fixed; */
+    background: url(../images/body-background-m.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 30px 30px 50px 15px;
     text-align: center;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.637);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.637);
+}
+header h1 {
+    color: brown;
+    font: normal bolder 1.8em var(--fonte1);
+    text-shadow: 2px 2px 2px #00000086;
 }
 
 header input#pesquisar {
     position: absolute;
     background-color: transparent;
+    width: 220px;
     padding: 5px 0;
     border: 1px solid #0707076e;
     border-radius: 20px;
@@ -42,28 +59,44 @@ input#pesquisar:focus { /* retiragem da borda automatica*/
 
 section.fundo-mesa {
     z-index: 10;
-    background: whitesmoke url(../images/background-mesa.jpg) no-repeat center center scroll;
+    background: whitesmoke url(../images/background-mesa-m.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
     width: 700px;
-    border-bottom-left-radius: 10px;
+    margin: 1px;
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 4px #000000b6;
 }
 
 section h2 {
-    padding-top: 150px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding: 90px ;
+    font: italic bolder 3em var(--fonte3);
+    font-variant: small-caps;
     text-align: center;
 }
 
+.lanches > p {
+    background-color: #0000004d;
+    color: white;
+    padding: 5px ;
+    font: normal normal 1.2em var(--fonte3);
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-decoration-color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
 #lanche1 {
+    box-sizing: border-box;
     position: absolute;
     top: 82%;
-    left: -20px;
+    left: -9px;
     cursor: pointer;
 }
 #lanche1 > p {
-    font: normal bolder 1em Arial,Helvetica, sans-serif;
     text-align: center;
     visibility: hidden;
 }
@@ -73,54 +106,68 @@ section h2 {
     transition-delay: .1s;
 }
 
-#lanche1:active {
+#lanche1:active{
     position: absolute;
-    top: 55%;
-    transition-delay: .1s;
-
+    top: 50%;
+    transition: .3s ease-in ;
 }
 
 #lanche2 {
     position: absolute;
     top: 77%;
-    left: 220px;
+    left: 235px;
     cursor: pointer;
 }
 #lanche2 > p {
-    font: normal bolder 1em Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: -30px;
     visibility: hidden;
 }
 #lanche2:active > p {
     visibility: visible;
-    transition-delay: .1s;
+    transition: .1s;
 }
 
 #lanche2:active {
     position: absolute;
-    top: 50%;
-    transition-delay: .1s;
+    top: 45%;
+    transition: .3s ease-in ;
 }
 
 #lanche3 {
     position: absolute;
     top: 84%;
-    left: 450px;
+    left: 455px;
     cursor: pointer;
 }
 #lanche3 > p {
-    font: normal bolder 1em Arial, Helvetica, sans-serif;
     text-align: center;
     visibility: hidden;
 }
 #lanche3:active > p {
     visibility: visible;
-    transition-delay: .1s;
+    transition: .1s;
 }
 
 #lanche3:active {
     position: absolute;
-    top: 55%;
-    transition-delay: .1s;
+    top: 54%;
+    transition: .3s ease-in ;
+}
+
+/*  continuar contruçao do celular */
+#celular {
+    z-index: 8;
+    position: absolute;
+
+    top: 40%;
+    left: 53%;
+}
+
+.conteudo-celular {
+    position: static;
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    margin: -300px 215px;
 }
