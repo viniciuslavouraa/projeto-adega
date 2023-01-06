@@ -63,13 +63,13 @@ main {
 }
 
 section.fundo-mesa {
+    position: absolute;
     z-index: 10;
     background: whitesmoke url(../backgrounds/background-mesa-m.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
     width: 800px;
     margin: 1px;
-
     box-shadow: 2px 2px 4px #000000b6;
 }
 
@@ -96,7 +96,7 @@ section h2 {
 
 #lanche1 {
     position: absolute;
-    top: 510px;
+    top: 400px;
     left: -9px;
     cursor: pointer;
 }
@@ -112,13 +112,13 @@ section h2 {
 
 #lanche1:active{
     position: absolute;
-    top: 50%;
+    top: 36%;
     transition: .3s ease-in ;
 }
 
 #lanche2 {
     position: absolute;
-    top: 475px;
+    top: 375px;
     left: 290px;
     cursor: pointer;
 }
@@ -134,13 +134,13 @@ section h2 {
 
 #lanche2:active {
     position: absolute;
-    top: 45%;
+    top: 30%;
     transition: .3s ease-in ;
 }
 
 #lanche3 {
     position: absolute;
-    top: 515px;
+    top: 420px;
     left: 550px;
     cursor: pointer;
 }
@@ -155,16 +155,16 @@ section h2 {
 
 #lanche3:active {
     position: absolute;
-    top: 54%;
+    top: 35%;
     transition: .3s ease-in ;
 }
 
 #celular {
     display: block;
     z-index: 8;
-    position: absolute;
+    position: relative;
     top: 190px;
-    left: 821px;
+    left: 790px;
 }
 
 .conteudo-celular {
