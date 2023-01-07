@@ -161,9 +161,9 @@ section h2 {
 
 #celular {
     display: block;
-    z-index: 8;
+    z-index: 9;
     position: relative;
-    top: 190px;
+    top: 121px;
     left: 790px;
 }
 
@@ -173,6 +173,15 @@ section h2 {
     background: url(../images/cartaz-promoçao-m.png)center center scroll;
     background-size: cover;
     width: 104px;
-    height: 221px;
-    margin: -345px 170px;
+    height: 225px;
+    margin: -349px 170px;
+}
+
+#anuncio {
+    z-index: 8;
+    background-color: white;
+    position: relative;
+    width: 545px;
+    height: 150px;
+    margin: 590px 803px;
 }
