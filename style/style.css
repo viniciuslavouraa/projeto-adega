@@ -159,5 +159,18 @@ section h2 {
     transition: .3s ease-in ;
 }
 
+#cardapio {
+    position: absolute;
+    top: 190px ;
+    left: 850px;
+    border: 2 solid #000000;
+    border-radius: 20px;
+    box-shadow: inset 1px -5px 20px 0px #00000069;
+}
+
+#cardapio > img {
+    padding: 10px;
+    border-radius: 20px;
+}
 
 
