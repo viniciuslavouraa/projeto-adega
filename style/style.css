@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(../backgrounds/body-background-m.jpg) no-repeat center center fixed;
+    background: url(../backgrounds/background-celular.jpg) no-repeat center center fixed;
     background-size: cover;
     font: normal normal 1em var(--fonte-padrao);
     overflow-x: hidden;
@@ -24,7 +24,7 @@ body {
 
 header {
    /* position: fixed; */
-    background: url(../backgrounds/body-background-m.jpg) no-repeat center center fixed;
+    background: url(../backgrounds/background-celular.jpg) no-repeat center center fixed;
     background-size: cover;
     padding: 30px 30px 50px 15px;
     text-align: center;
@@ -65,7 +65,7 @@ main {
 section.fundo-mesa {
     position: absolute;
     z-index: 10;
-    background: whitesmoke url(../backgrounds/background-mesa-m.jpg) no-repeat center center scroll;
+    background: transparent url(../backgrounds/background-rustico-mesa.jpg) no-repeat center center scroll;
     background-size: cover;
     height: 100vh; 
     width: 800px;
@@ -159,29 +159,5 @@ section h2 {
     transition: .3s ease-in ;
 }
 
-#celular {
-    display: block;
-    z-index: 9;
-    position: relative;
-    top: 121px;
-    left: 790px;
-}
 
-.conteudo-celular {
-    position: static;
-    background-color: white;
-    background: url(../images/cartaz-promoçao-m.png)center center scroll;
-    background-size: cover;
-    width: 104px;
-    height: 225px;
-    margin: -349px 170px;
-}
 
-#anuncio {
-    z-index: 8;
-    background-color: white;
-    position: relative;
-    width: 545px;
-    height: 150px;
-    margin: 590px 803px;
-}
