@@ -31,7 +31,7 @@ header {
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.637);
 }
 header h1 {
-    color: brown;
+    color: white;
     font: normal bolder 1.8em var(--fonte1);
     text-shadow: 2px 2px 2px #00000086;
 }
@@ -39,6 +39,7 @@ header h1 {
 header input#pesquisar {
     position: absolute;
     background-color: transparent;
+    color: white;
     width: 220px;
     padding: 5px 0;
     border: 1px solid #0707076e;
@@ -55,11 +56,6 @@ input#pesquisar:focus { /* retiragem da borda automatica*/
     font: normal bolder 1em Arial, Helvetica, sans-serif;
     font-variant: small-caps;
 
-}
-
-main {
-    min-width: 700px;
-    max-width: 1000px;
 }
 
 section.fundo-mesa {
@@ -159,10 +155,19 @@ section h2 {
     transition: .3s ease-in ;
 }
 
+aside h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font: italic bolder 3em var(--fonte3);
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 #cardapio {
     position: absolute;
-    top: 190px ;
-    left: 850px;
+    top: 160px ;
+    left: 860px;
     border: 2 solid #000000;
     border-radius: 20px;
     box-shadow: inset 1px -5px 20px 0px #00000069;
@@ -172,5 +177,3 @@ section h2 {
     padding: 10px;
     border-radius: 20px;
 }
-
-
